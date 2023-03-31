@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<p id="demo">Change the style of an HTML element.</p>
+<p id="01"  style="display:none">Hello World!</p>
+<p id="02">Hello Sweden!</p>
+<p id="03">Hello</p>
+
+<script>
+$(document).ready(function() {
+  $("#demo").css("font-size","35px"); //document.getElementById("demo").style.fontSize = "35px";
+  $("#02").hide(); // myElement.style.display = "none";
+  $("#01").show(); // myElement.style.display = "";
+  $("#id03").remove(); //document.getElementById("id02").remove();
+
+});
+</script>
+
+</body>
+</html> 

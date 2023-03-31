@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Access a JavaScript Object</h2>
+    <p id="demo"></p>
+
+    <script>
+        const obj = '{"name":"Kiruthi", "age":21, "car":null}';
+        const myObj = JSON.parse(obj);
+        let text = "";
+        for (const x in myObj) {
+            text += myObj[x] + ", ";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+
+</html>

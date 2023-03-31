@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Window</h2>
+
+<p id="demo"></p>
+
+<input type="button" value="Load new document" onclick="newDoc()">
+
+<input type="button" value="Forward" onclick="goForward()">
+
+<script>
+document.getElementById("demo").innerHTML =
+"Browser inner window width: " + window.innerWidth + "px<br>" +
+"Browser inner window height: " + window.innerHeight + "px<br>"+
+"Screen width is " + screen.width+"<br>"+
+"Screen Height:" + screen.height+"<br>"+
+"Screen Color Depth: " +screen.colorDepth+"<br>"+
+"Screen Pixel Depth: " + screen.pixelDepth+'<br>'+
+"The full URL of this page is:<br>" + window.location.href+'<br>'+
+"Page path is " + window.location.pathname+"<br>"+
+"navigator.onLine is " + navigator.onLine+"<br>"+
+"javaEnabled is " + navigator.javaEnabled();
+function newDoc() {
+  window.location.assign("https://www.google.com");
+}
+function goForward() {
+  window.history.forward()
+}
+</script>
+
+</body>
+</html>

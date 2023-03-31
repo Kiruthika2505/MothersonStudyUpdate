@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<h2>Finding HTML Elements by Id</h2>
+<p id="id01">Hello World!</p>
+<p id="id02">Hello Sweden!</p>
+<p id="id03">Hello Japan!</p>
+
+<p id="demo"></p>
+
+<script>
+  const myElements = $("#id01");  //const myElement = document.getElementById("id01");
+ //const  myElements = $("p"); // const myElements = document.getElementsByTagName("p");
+// const myElements = $(".id01"); //const myElements = document.getElementsByClassName("intro");
+// const myElements = $("p.id01"); //const myElements = document.querySelectorAll("p.intro");
+ $("#demo").text("The text from the id01 paragraph is: " + myElements[0].innerHTML); 
+//document.getElementById("demo").innerHTML = "The text from the id01 paragraph is: " + myElement.innerHTML;
+</script>
+
+</body>
+</html>
+
+
+
+

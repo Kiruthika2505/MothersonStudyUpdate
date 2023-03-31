@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Form Application</title>
+    </head>
+    <body>
+        <div>
+            <label>Enter your name</label>
+            <input type="text" id="t1" name="inp1" value=" " onkeyup="demo()" placeholder="Enter your name" required>
+             <span id="spanid">No Strength</span><br><br>
+
+            EmpId:<input type="text" id="t11" name="n11" value=" " placeholder="EmpId" onkeyup="demo1()" required> <span id="spanid1">Null</span><br><br>
+            Designation:<input type="text" id="t2" name="n2" value=" " placeholder="Designation" onkeyup="demo2()" required><span id="spanid2">No value</span><br><br>
+            BasicPay:<input type="number" id="t3" name="n3" value=" " onkeyup="tot_sal()" placeholder="Basic Pay" required><br><br>
+            HRA:<input type="number" id="t4" name="n4" value=" " placeholder="Hra"><br><br>
+            DA:<input type="number" id="t5" name="n5" value=" " placeholder="Da"><br><br>
+            PF:<input type="number" id="t6" name="n6" value=" " placeholder="PF"><br><br>
+            GrossPay:<input type="number" id="t7" name="n7" value=" " placeholder="Grosspay"><br><br>
+            NetPay:<input type="number" id="t8" name="n8" value=" " placeholder="NetPay"><br><br>
+        
+            <input type="submit" onclick="sub()" value="Submit">
+
+        </div>
+        <p id="p1"></p>
+        <script src="./form.js"></script>
+    </body>
+</html>

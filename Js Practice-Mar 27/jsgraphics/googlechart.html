@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<body>
+<div
+id="myChart" style="width:100%; max-width:600px; height:500px;">
+</div>
+
+<script>
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Courses', 'Mhl'],
+  ['HTML',54.8],
+  ['CSS',48.6],
+  ['JS',44.4],
+  ['React',23.9],
+  ['Node',14.5]
+]);
+
+var options = {
+  title:'Full Stack Development'
+};
+
+var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>

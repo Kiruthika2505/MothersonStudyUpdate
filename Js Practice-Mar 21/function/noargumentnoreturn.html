@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>
+            No argument no return
+        </title>
+        <body>
+          INP1<input type="text" id="inp1" required/>
+          INP2<input type="text" id="inp2" required/>
+          <input type="button" onclick="demo()" value="Submit"/>
+        </body>
+        <script>
+            function demo(){
+                let inp1=document.getElementById("inp1").value;
+                let inp2=document.getElementById("inp2").value;
+                let total;
+                inp1=parseInt(inp1);
+                inp2=parseInt(inp2);
+                total=inp1+inp2;
+                document.write(total);
+            }
+        </script>
+    </head>
+</html>
